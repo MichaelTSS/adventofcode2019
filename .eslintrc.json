@@ -1,0 +1,15 @@
+{
+    "extends": [
+        "standard"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+    "rules": {
+        "arrow-parens": 0,
+        "object-shorthand": "off",
+        "arrow-body-style": "off",
+        "max-len": "off",
+        "func-names": "off"
+    }
+}
