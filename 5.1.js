@@ -2,14 +2,13 @@
 'use strict'
 const fs = require('fs')
 const inputRaw = fs.readFileSync('./input-5.1.txt', 'utf-8')
+const INPUT = 1
 
 inputRaw.trim().split('\n').forEach(line => {
   const data = line.trim().split(',')
   // console.log(data)
   process(data)
 })
-
-// const INPUT = 1
 
 function process (input) {
   const c = input.length
@@ -37,7 +36,7 @@ function process (input) {
       i += 2
     } else if (opcode === 3) {
       // console.log(i, input.slice(i, i + 2))
-      input[input[i + 1]] = 1
+      input[input[i + 1]] = INPUT
     } else if (opcode === 4) {
       // console.log(i, input.slice(i, i + 2))
       console.log('OUTPUT:', param1)

@@ -4,7 +4,6 @@ const inputRaw = fs.readFileSync('./input-2.1.txt', 'utf-8')
 
 inputRaw.trim().split('\n').forEach(line => {
   const data = line.trim().split(',').map(x => parseInt(x, 10))
-  console.log(data)
   console.log(process(data))
 })
 

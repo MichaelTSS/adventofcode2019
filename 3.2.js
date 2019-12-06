@@ -9,7 +9,7 @@ inputRaw.trim().split('\n').forEach(line => {
   //
 })
 
-console.log('distance =', resolve(data))
+console.log(resolve(data))
 
 // ==================
 
@@ -25,7 +25,7 @@ function resolve (data) {
     for (let i = 0; i < count; i++) {
       const match = path2[radius].findIndex(coordinates => {
         if (coordinates[0] === path1[radius][i][0]) {
-          console.log(coordinates, path1[radius][i])
+          // console.log(coordinates, path1[radius][i])
           combinedSteps.push(coordinates[1] + path1[radius][i][1])
         }
       })

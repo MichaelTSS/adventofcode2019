@@ -9,7 +9,7 @@ inputRaw.trim().split('\n').forEach(line => {
   //
 })
 
-console.log('distance =', resolve(data))
+console.log(resolve(data))
 
 // ==================
 

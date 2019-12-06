@@ -9,9 +9,7 @@ inputRaw.trim().split('\n').forEach(line => {
       const input = [data[0], i, j, ...data.slice(3)]
       const result = process(input)
       if (result === 19690720) {
-        console.log([i, j, result])
         console.log(100 * i + j)
-        // 519400
         return
       }
     }
