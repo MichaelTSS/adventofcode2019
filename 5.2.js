@@ -57,4 +57,3 @@ function process (input) {
   }
   return input
 }
-// answer submitted (9775037) is too low
